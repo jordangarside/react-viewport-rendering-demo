@@ -8,6 +8,9 @@ root.reactTrackerDemo.ResultGrid = React.createClass
 		unorderedListStyle =
 			padding: 0
 			textAlign: "center"
-		<ul style={unorderedListStyle}>
-			{<root.reactTrackerDemo.Result item={@data.results[i]} /> for i in [0..@data.results.length-1]}
-		</ul>
+		<div className="resultGridContainer">
+			<root.reactTrackerDemo.ColorChooser />
+			<ul style={unorderedListStyle}>
+				{<root.reactTrackerDemo.Result item={@data.results[i]} /> for i in [0..@data.results.length-1]}
+			</ul>
+		</div>
